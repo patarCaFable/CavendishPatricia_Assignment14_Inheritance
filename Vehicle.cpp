@@ -11,12 +11,18 @@
 
 int main() {
 	Vehicle vehicle1;
+	Car car1;
 
 	cout << "Vehicle Program" << endl;;
-	cout << "\nVehicle" << endl;
+	cout << "\nVehicle:" << endl;
 	vehicle1.setManu();
 	vehicle1.setYear();
 	vehicle1.displayInfo();
+
+	cout << "\nCar:" << endl;
+	car1.setManu();
+	car1.setYear();
+	car1.getNumDoors();
 
 	cout << endl << endl;
 	system("PAUSE");
