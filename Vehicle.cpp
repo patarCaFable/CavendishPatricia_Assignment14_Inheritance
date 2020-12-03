@@ -22,15 +22,17 @@ int main() {
 	vehicle1.displayInfo();
 
 	cout << "\nCar:" << endl;
+	cin.ignore();
 	car1.setManu();
 	car1.setYear();
-	car1.getNumDoors();
+	car1.setNumDoors();
 	car1.displayInfo();
 
 	cout << "\nTruck:" << endl;
+	cin.ignore();
 	truck1.setManu();
 	truck1.setYear();
-	truck1.getTowCapacity();
+	truck1.setTowCapacity();
 	truck1.displayInfo();
 
 
@@ -68,7 +70,7 @@ void Vehicle::setManu()
 
 void Vehicle::displayInfo()
 {
-	cout << "Vehicle Info" << endl;
-	cout << "Manufacturer: " << manufacturer << endl;
-	cout << "Year Built: " << year << endl;
+	cout << "Vehicle Info:" << endl;
+	cout << "Manufacturer: " << getManu() << endl;
+	cout << "Year Built: " << getYear() << endl;
 }

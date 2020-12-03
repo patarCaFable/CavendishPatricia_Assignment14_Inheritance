@@ -23,5 +23,5 @@ void Car::setNumDoors()
 void Car::displayInfo()
 {
 	Vehicle::displayInfo();
-	cout << "Doors: " << numDoors << endl;;
+	cout << "Doors: " << getNumDoors() << endl;;
 }
