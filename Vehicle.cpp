@@ -46,12 +46,12 @@ Vehicle::Vehicle() {
 
 int Vehicle::getYear()
 {
-	cout << "Enter the year built: ";
 	return year;
 }
 
 void Vehicle::setYear()
 {
+	cout << "Enter the year built: ";
 	cin >> year;
 }
 
