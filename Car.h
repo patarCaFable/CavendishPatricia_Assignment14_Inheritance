@@ -8,7 +8,7 @@ class Car :
 private:
     int numDoors;
 public:
-    Car();
+    Car(int doors, string man, int yr);
     int getNumDoors();
     void setNumDoors();
     void displayInfo();

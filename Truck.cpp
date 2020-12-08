@@ -8,11 +8,10 @@
 #include "Truck.h"
 using namespace std;
 
-Truck::Truck()
+Truck::Truck(int tow, string man, int yr) : Vehicle(man, yr)
 {
-	towCapacity = 0;
+	towCapacity = tow;
 }
-
 int Truck::getTowCapacity()
 {
 	return towCapacity;

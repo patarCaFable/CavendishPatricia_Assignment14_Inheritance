@@ -5,9 +5,9 @@ class Vehicle
 {
 private:
 	string manufacturer;
-	int year;
+	int yearBuilt;
 public:
-	Vehicle();
+	Vehicle(string man, int yr);
 	int getYear();
 	void setYear();
 	string getManu();

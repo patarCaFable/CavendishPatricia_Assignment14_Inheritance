@@ -8,7 +8,7 @@ class Truck :
 private:
     int towCapacity;
 public:
-    Truck();
+    Truck(int tow, string man, int yr);
     int getTowCapacity();
     void setTowCapacity();
     void displayInfo();

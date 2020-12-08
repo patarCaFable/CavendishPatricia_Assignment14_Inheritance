@@ -10,51 +10,20 @@
 #include "Car.h"
 #include "Truck.h"
 
-int main() {
-	Vehicle vehicle1;
-	Car car1;
-	Truck truck1;
-
-	cout << "Vehicle Program" << endl;;
-	cout << "\nVehicle:" << endl;
-	vehicle1.setManu();
-	vehicle1.setYear();
-	vehicle1.displayInfo();
-
-	cout << "\nCar:" << endl;
-	cin.ignore();
-	car1.setManu();
-	car1.setYear();
-	car1.setNumDoors();
-	car1.displayInfo();
-
-	cout << "\nTruck:" << endl;
-	cin.ignore();
-	truck1.setManu();
-	truck1.setYear();
-	truck1.setTowCapacity();
-	truck1.displayInfo();
-
-
-	cout << endl << endl;
-	system("PAUSE");
-	return 0;
-}
-
-Vehicle::Vehicle() {
-	manufacturer = "";
-	year = 0;
+Vehicle::Vehicle(string man, int yr) {
+	manufacturer = man;
+	yearBuilt = yr;
 }
 
 int Vehicle::getYear()
 {
-	return year;
+	return yearBuilt;
 }
 
 void Vehicle::setYear()
 {
 	cout << "Enter the year built: ";
-	cin >> year;
+	cin >> yearBuilt;
 }
 
 string Vehicle::getManu()

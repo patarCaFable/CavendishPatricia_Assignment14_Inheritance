@@ -7,9 +7,9 @@
 #include "Car.h"
 using namespace std;
 
-Car::Car()
+Car::Car(int doors, string man, int yr) : Vehicle(man, yr)
 {
-	numDoors = 0;
+	numDoors = doors;
 }
 int Car::getNumDoors()
 {
